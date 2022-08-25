@@ -92,9 +92,3 @@ async def get_employee(req: Request):
     return data
 
 
-@app.post("/test/generate")
-async def generate(req: Request):
-    month = await req.json()
-    data = con.execute(coverage.insert().values())
-
-
